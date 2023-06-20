@@ -19,16 +19,16 @@ export class Player {
             <span class="ps-3">${this.name}</span>
           </div>
           <div>
-            <button onclick="app.PlayersController.increasePlayerScore('${this.name}')" class="btn btn-outline-dark rounded-pill">
-              ➕
+            <button onclick="app.PlayersController.decreasePlayerScore('${this.name}')" class="btn btn-outline-dark rounded-pill">
+              ➖
             </button>
           </div>
           <div class="px-3 d-flex align-items-center">
             <span>${this.score}</span>
           </div>
           <div>
-            <button onclick="app.PlayersController.decreasePlayerScore('${this.name}')" class="btn btn-outline-dark rounded-pill">
-              ➖
+            <button onclick="app.PlayersController.increasePlayerScore('${this.name}')" class="btn btn-outline-dark rounded-pill">
+              ➕
             </button>
           </div>
         </div>`
