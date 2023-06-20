@@ -1,6 +1,9 @@
 /* BASIC STYLES HERE */
 
 .img-style {
-    max-height: 5vh;
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border: 2px solid goldenrod;
     border-radius: 50%;
 }

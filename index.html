@@ -17,23 +17,39 @@
 
 <body>
   <!-- SECTION -->
-  <header>
-    <h1>GameNight</h1>
+  <header class="container-fluid">
+    <section class="row p-3">
+      <div class="col-12">
+        <h1>Game Night</h1>
+
+      </div>
+
+    </section>
   </header>
 
   <!-- SECTION -->
-  <main id="router-view">
+  <main id="router-view" class="container-fluid">
     <!-- PRIMARY VIEWPORT -->
     <section class="row">
       <div class="col-12">
         <form onsubmit="app.PlayersController.addPlayer(event)">
-          <div>
+
+          <div class="p-3">
             <label for="playerName">Player Name:</label>
             <input id="playerName" type="text" minlength="2" maxlength="15" name="name" required>
           </div>
+
           <div>
-            <button type="submit">Add Player</button>
+            <div class="p-3">
+              <label for="playerImg">Player Image:</label>
+              <input id="playerImg" type="url" maxlength="300" name="imgUrl" required>
+            </div>
           </div>
+
+          <div class="p-3">
+            <button type="submit" class="btn btn-primary">Add Player</button>
+          </div>
+
         </form>
       </div>
       <section class="row" id="players">

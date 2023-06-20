@@ -14,7 +14,7 @@ function _drawPlayers() {
     players.forEach(player => template += player.PlayerTemplateCard)
 
     // console.log(players[0].PlayerTemplateCard)
-    console.log("This is my template: ", template)
+    // console.log("This is my template: ", template)
 
     setHTML('players', template)
 }
@@ -26,20 +26,24 @@ export class PlayersController {
         _drawPlayers()
     }
 
-    testButton() {
-        console.log("This button works")
-    }
+    // testButton() {
+    //     console.log("This button works")
+    // }
 
     increasePlayerScore(playerName) {
-        console.log('player name', playerName)
+        console.log('player name to increase', playerName)
 
         playerServices.increasePlayerScore(playerName)
+
+        _drawPlayers()
     }
 
     decreasePlayerScore(playerName) {
         console.log("player name to decrease", playerName)
 
         playerServices.decreasePlayerScore(playerName)
+
+        _drawPlayers()
     }
 
     addPlayer(event) {
