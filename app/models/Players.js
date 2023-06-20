@@ -21,3 +21,6 @@ export class Player {
 
 }
 
+// TODO grab player id's with a find function
+// TODO use player id's to change the HTML with an increased score
+// TODO now decrease the score

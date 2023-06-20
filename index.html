@@ -28,15 +28,15 @@
       <div class="col-12">
         <form onsubmit="app.PlayersController.addPlayer(event)">
           <div>
-            <label for=" name">Player Name:</label>
-            <input type="text" minlength="2" maxlength="15" name="name" required>
+            <label for="playerName">Player Name:</label>
+            <input id="playerName" type="text" minlength="2" maxlength="15" name="name" required>
           </div>
           <div>
             <button type="submit">Add Player</button>
           </div>
         </form>
       </div>
-      <section class="row">
+      <section class="row" id="players">
         <div class="col-12">
 
 
