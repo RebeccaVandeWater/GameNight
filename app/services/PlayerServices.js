@@ -12,7 +12,13 @@ class PlayersService {
         console.log(AppState.players);
     }
 
+    increasePlayerScore(playerName) {
+        console.log("player name?", playerName)
+    }
 
+    decreasePlayerScore(playerName) {
+        console.log("player name?", playerName)
+    }
 
 
 

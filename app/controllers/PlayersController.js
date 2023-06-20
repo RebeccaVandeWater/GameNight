@@ -30,6 +30,18 @@ export class PlayersController {
         console.log("This button works")
     }
 
+    increasePlayerScore(playerName) {
+        console.log('player name', playerName)
+
+        playerServices.increasePlayerScore(playerName)
+    }
+
+    decreasePlayerScore(playerName) {
+        console.log("player name to decrease", playerName)
+
+        playerServices.decreasePlayerScore(playerName)
+    }
+
     addPlayer(event) {
         try {
             event.preventDefault()
